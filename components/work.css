@@ -1,0 +1,172 @@
+/* Container for the entire component */
+.sustainability-container {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: auto; /* Allow height to adjust based on content */
+  background-color: #069492; /* Background color */
+  background-image: url(../../public/images/Ringtest/background1.jpg); /* Background image */
+  background-repeat: no-repeat; /* Prevent repeating background image */
+  background-size: cover; /* Cover the container with background image */
+  background-position: center; /* Center the background image */
+  color: white; /* Text color */
+  
+}
+ 
+
+
+/* Title styling */
+.sustainability-title {
+  font-size: 3rem; /* Large font size */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 2rem; /* Space below the title */
+}
+
+/* Container for the carousel */
+.sustainability-carousel {
+  width: 80%; /* Container width is 80% of parent */
+  max-width: 1200px; /* Maximum width of container */
+  overflow: hidden; /* Hide overflow content */
+  position: relative; /* Position relative for child positioning */
+}
+
+/* Container for sliding content */
+.sustainability-content {
+  display: flex; /* Flexbox layout for horizontal alignment */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+  width: 100%; /* Adjust based on number of items visible (3 items * 100%) */
+}
+
+/* Each item in the carousel */
+.sustainability-item {
+  flex: 1 0 33.333%; /* Each item takes up 1/3 of the container width */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center items horizontally */
+  box-sizing: border-box; /* Include padding and border in item width */
+}
+
+/* Styling for icons */
+.sustainability-icon {
+  width: 80px; /* Fixed width for icons */
+  height: 80px; /* Fixed height for icons */
+  margin-bottom: 1rem; /* Space below the icon */
+  border-radius: 50%; /* Circular icon */
+  overflow: hidden; /* Hide overflow of icon */
+}
+
+/* Styling for icon images */
+.sustainability-icon img {
+  width: 100%; /* Fill the container width */
+  height: 100%; /* Fill the container height */
+  object-fit: cover; /* Cover the container while preserving aspect ratio */
+}
+
+/* Styling for data below the icon */
+.sustainability-data {
+  text-align: center; /* Center text alignment */
+}
+
+/* Heading styling */
+.sustainability-data h2 {
+  font-size: 2rem; /* Font size for headings */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 0.5rem; /* Space below heading */
+}
+
+/* Paragraph styling */
+.sustainability-data p {
+  font-size: 1rem; /* Font size for paragraphs */
+  margin-bottom: 0; /* No space below paragraph */
+}
+
+/* Pagination buttons container */
+.sustainability-pagination {
+  display: flex; /* Flexbox layout for horizontal alignment */
+  justify-content: center; /* Center buttons horizontally */
+  gap: 1rem; /* Space between buttons */
+  margin-top: 1rem; /* Space above pagination */
+}
+
+/* Pagination button styling */
+.sustainability-pagination-button {
+  background-color: transparent; /* Transparent background */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+  color: white; /* Text color */
+}
+
+
+@media (max-width: 768px) {
+  .sustainability-title {
+    font-size: 2.5rem; /* Slightly smaller title font size */
+    margin-bottom: 1.5rem; /* Reduced space below title */
+  }
+
+  .sustainability-carousel {
+    width: 90%; /* Increase width to fill container */
+  }
+
+  .sustainability-content {
+    width: 100%; /* Still accommodate 3 items at once */
+  }
+
+  .sustainability-item {
+    flex: 1 0 50%; /* Show 2 items at a time instead of 3 */
+   
+  }
+
+  .sustainability-icon {
+    width: 60px; /* Smaller icons */
+    height: 60px; /* Smaller icons */
+    
+  }
+
+  .sustainability-data h2 {
+    font-size: 1.5rem; /* Smaller heading font size */
+  }
+
+  .sustainability-data p {
+    font-size: 0.9rem; /* Smaller paragraph font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .sustainability-title {
+    font-size: 2rem; /* Further reduce title font size */
+    margin-bottom: 1rem; /* Further reduced space below title */
+  }
+
+  .sustainability-carousel {
+    width: 100%; /* Full width */
+  }
+
+  .sustainability-content {
+    width: 500%; /* Accommodate all items in a single line (if needed) */
+  }
+
+  .sustainability-item {
+    flex: 1 0 100%; /* Show 1 item at a time */
+  }
+
+  .sustainability-icon {
+    width: 50px; /* Even smaller icons */
+    height: 50px; /* Even smaller icons */
+  }
+
+  .sustainability-data h2 {
+    font-size: 1.25rem; /* Further smaller heading font size */
+  }
+
+  .sustainability-data p {
+    font-size: 0.8rem; /* Further smaller paragraph font size */
+  }
+
+  .sustainability-pagination {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 0.5rem; /* Reduced space between buttons */
+  }
+}
+
+

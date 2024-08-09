@@ -1,0 +1,52 @@
+.VMV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: px; */
+    background-color: #ccc;
+    
+  }
+  
+  .vision, .mission, .value {
+    /* flex: 1; */
+    width: 20rem;
+    height: 20rem;
+    transform: skewX(-5deg);
+    margin-left: 1rem ;
+  }
+  
+  .beforHover {
+    
+    width: 20rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* If the text needs to be visible against the background image */
+    height: 20rem;
+    transform: skewX(-15deg);
+    transform-origin: left;
+  }
+  .afterHover{
+    /* position: relative; */
+    background-color: #0bafec;
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transform: skewX(-5deg);
+    transform-origin: left;
+  }
+  .hoverText{
+    position: absolute;
+    top:1rem;
+    left: 4rem;
+    height: 20rem;
+    width: 15rem;
+  }
+
+ 
+  
